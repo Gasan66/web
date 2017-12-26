@@ -1,4 +1,4 @@
-bind = '0.0.0.0:8000'
+bind = '0.0.0.0:8080'
 working_dir = 'home/box/web'
 workers = 1
 worker_class = 'sync'
