@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from ..qa import views
+from django.conf.urls import url
+from qa import views
 
 
-admin.autodiscover()
+# admin.autodiscover()
 urlpatterns = [
-    path('^$', views.test),
-    path('^', include('qa.urls')),
+    url('^$', views.test),
+    url('^', include('qa.urls')),
 ]
