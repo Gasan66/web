@@ -79,7 +79,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ask',
         'USER': 'root',
-        'PASSWORD': 'Gfhjkm1987',
         'HOST': 'localhost',
     }
 }
