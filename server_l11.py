@@ -22,9 +22,7 @@ class TestModels(unittest.TestCase):
 class TestUser(unittest.TestCase):
     def test_user(self):
         try:
-            user, _ = User.objects.get_or_create(
-                username='x',
-                defaults={'password':'y', 'last_login': timezone.now()})
+            user, _ = User.objects.get_or_create(username='x', defaults={'password':'y', 'last_login': timezone.now()})
         except:
             assert False, "Failed to create user model, check db connection"
 
